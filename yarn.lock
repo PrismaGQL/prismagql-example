@@ -846,10 +846,10 @@
     terminal-link "2.1.1"
     tmp "0.2.1"
 
-"@prismagql/prismagql@^0.0.0-alpha.6":
-  version "0.0.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/@prismagql/prismagql/-/prismagql-0.0.0-alpha.6.tgz#cc31006e458b43d8d33e184b6e283a38daa87f9c"
-  integrity sha512-rEs6SY/2lqUBEMVgYyAmWAXQaaiyV8E2OkXf2LH16eI97y8/WqHoLdJucd5CYrlX9lTRIvhjgOH5LdYgAMxsbQ==
+"@prismagql/prismagql@^0.0.0-alpha.8":
+  version "0.0.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/@prismagql/prismagql/-/prismagql-0.0.0-alpha.8.tgz#3be35088f4d32bf917a91fca5656d1fdd0a9896e"
+  integrity sha512-MGTH88LQvbfqF6iElJslZAPVbMHdkp7GNDyha8kW9qd9bnTx8gemZ2uTDjMwTJiAShz/XUJRwCNyz6LVRnw4bw==
   dependencies:
     "@casl/ability" "^5.4.3"
     "@casl/prisma" "^1.0.1"
