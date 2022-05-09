@@ -1,6 +1,5 @@
 import { Prisma } from '@prisma/client'
-import { Decimal } from '@prisma/client/runtime'
-import { PGEnum, PGField, PGModel } from '@prismagql/prismagql/lib/pg'
+import { PGEnum, PGField, PGModel } from '@prismagql/prismagql/src/types/common'
 
 type RoleValuesType = ['USER', 'ADMIN']
 type UserFieldMapType = {

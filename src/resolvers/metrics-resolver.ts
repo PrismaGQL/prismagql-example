@@ -1,4 +1,3 @@
-import { Prisma } from '@prisma/client'
 import { pg, ResolverSetupFn } from '../graphql'
 import { metrics } from '../models/metrics'
 

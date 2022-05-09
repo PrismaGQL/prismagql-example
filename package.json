@@ -21,7 +21,7 @@
   "homepage": "https://github.com/prismagql/prismagql-example#readme",
   "dependencies": {
     "@prisma/client": "^3.12.0",
-    "@prismagql/prismagql": "^0.0.0-alpha.6",
+    "@prismagql/prismagql": "^0.0.0-alpha.8",
     "apollo-server": "^3.6.7",
     "graphql": "^16.3.0",
     "graphql-subscriptions": "^2.0.0",
