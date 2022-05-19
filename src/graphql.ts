@@ -3,11 +3,11 @@ import { getPGBuilder } from '@prismagql/prismagql'
 import { ApolloServer } from 'apollo-server'
 import { ApolloServerBase } from 'apollo-server-core'
 import { PubSub } from 'graphql-subscriptions'
-import { PGfyResponse } from '../prisma/prismagql/generated'
+import { PGfyResponse } from './generated'
 import { initClient } from './jest.setup'
 
-export const pg = getPGBuilder<Context>()
-export const pgDatamodel = pg.pgfy<PGfyResponse>(Prisma.dmmf.datamodel)
+export const pg = getPGBuilder<{ Context: Context; PGGeneratedType: PGfyResponse }>()()
+export const pgDatamodel = pg.pgfy(Prisma.dmmf.datamodel)
 
 interface UserAttributes {
   id: number | null

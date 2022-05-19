@@ -4,6 +4,7 @@ generator client {
 
 generator PrismaGQL {
   provider = "prismagql"
+  output   = "../src/generated.ts"
 }
 
 datasource db {

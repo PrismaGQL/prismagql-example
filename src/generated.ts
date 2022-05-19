@@ -1,5 +1,6 @@
 import { Prisma } from '@prisma/client'
-import { PGEnum, PGField, PGModel } from '@prismagql/prismagql/src/types/common'
+import { Decimal } from '@prisma/client/runtime'
+import { PGEnum, PGField, PGModel } from '@prismagql/prismagql/lib/types/common'
 
 type RoleValuesType = ['USER', 'ADMIN']
 type UserFieldMapType = {
@@ -23,8 +24,8 @@ type PGfyResponseEnums = {
   Role: PGEnum<RoleValuesType>
 }
 type PGfyResponseModels = {
-  User: PGModel<UserFieldMapType, Prisma.UserFindManyArgs>
-  Post: PGModel<PostFieldMapType, Prisma.PostFindManyArgs>
+  User: PGModel<UserFieldMapType, Prisma.UserWhereInput>
+  Post: PGModel<PostFieldMapType, Prisma.PostWhereInput>
 }
 
 export interface PGfyResponse {
